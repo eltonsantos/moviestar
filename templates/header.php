@@ -20,9 +20,9 @@
   $userData = $userDao->verifyToken(false);
 
   // Verifica se tem imagem
-  if(empty($userData->image)) {
-    $userData->image = "user.png";
-  }
+  // if(empty($userData->image)) {
+  //   $userData->image = "user.png";
+  // }
 
 ?>
 <!DOCTYPE html>
