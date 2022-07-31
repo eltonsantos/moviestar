@@ -54,13 +54,16 @@
           <ul class="navbar-nav">
               <?php if($userData): ?>
                 <li class="nav-item">
+                  <img src="<?= $BASE_URL ?>img/users/<?= $userData->image ?>" alt="<?= $userData->name ?>" class="img-profile-small" />
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link bold" href="<?= $BASE_URL ?>editprofile.php"><?= $userData->name ?></a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="<?= $BASE_URL ?>newmovie.php"><i class="far fa-plus-square"></i> Incluir Filme</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="<?= $BASE_URL ?>dashboard.php">Meus Filmes</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link bold" href="<?= $BASE_URL ?>editprofile.php"><?= $userData->name ?></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="<?= $BASE_URL ?>logout.php">Sair</a>

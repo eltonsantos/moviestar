@@ -51,16 +51,6 @@
         <p class="empty-list">Ainda não há filmes de ação cadastrados!</p>
     <?php endif; ?>
   </div>
-  <h2 class="section-title">Ficção</h2>
-  <p class="section-description">Veja os melhores filmes de ficção</p>
-  <div class="movies-container">
-    <?php foreach($fictionMovies as $movie): ?>
-        <?php require("templates/movie_card.php"); ?>
-    <?php endforeach; ?>
-    <?php if(count($fictionMovies) === 0): ?>
-        <p class="empty-list">Ainda não há filmes de ficção cadastrados!</p>
-    <?php endif; ?>
-  </div>
   <h2 class="section-title">Drama</h2>
   <p class="section-description">Veja os melhores filmes de drama</p>
   <div class="movies-container">
@@ -69,6 +59,16 @@
     <?php endforeach; ?>
     <?php if(count($dramaMovies) === 0): ?>
         <p class="empty-list">Ainda não há filmes de drama cadastrados!</p>
+    <?php endif; ?>
+  </div>
+  <h2 class="section-title">Ficção</h2>
+  <p class="section-description">Veja os melhores filmes de ficção</p>
+  <div class="movies-container">
+    <?php foreach($fictionMovies as $movie): ?>
+        <?php require("templates/movie_card.php"); ?>
+    <?php endforeach; ?>
+    <?php if(count($fictionMovies) === 0): ?>
+        <p class="empty-list">Ainda não há filmes de ficção cadastrados!</p>
     <?php endif; ?>
   </div>
   <h2 class="section-title">Romance</h2>
